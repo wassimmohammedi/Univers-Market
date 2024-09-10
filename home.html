@@ -3,73 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Inquiry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        </style>
 </head>
 <body>
-    <select id="deliverySelect" class=" form-select select-Dropdown_province advanced_select advanced_required" data-field="chippingprovince">
-        <option data-select_placeholder="true" selected="" value="0">الولاية</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="1" value="950" data-stopdesk="0">1. أدرار</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="2" value="500" data-stopdesk="0">2. الشلف</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="3" value="600" data-stopdesk="0">3. الأغواط</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="4" value="500" data-stopdesk="0">4. أم البواقي</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="5" value="450" data-stopdesk="0">5. باتنة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="6" value="450" data-stopdesk="0">6. بجاية</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="7" value="600" data-stopdesk="0">7. بسكرة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="8" value="950" data-stopdesk="0">8. بشار</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="9" value="500" data-stopdesk="0">9. البليدة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="10" value="500" data-stopdesk="0">10. البويرة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="11" value="1250" data-stopdesk="0">11. تامنغست</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="12" value="500" data-stopdesk="0">12. تبسة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="13" value="500" data-stopdesk="0">13. تلمسان</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="14" value="500" data-stopdesk="0">14. تيارت</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="15" value="500" data-stopdesk="0">15. تيزي وزو</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="16" value="450" data-stopdesk="0">16. الجزائر</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="17" value="600" data-stopdesk="0">17. الجلفة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="18" value="450" data-stopdesk="0">18. جيجل</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="19" value="450" data-stopdesk="0">19. سطيف</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="20" value="500" data-stopdesk="0">20. سعيدة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="21" value="500" data-stopdesk="0">21. سكيكدة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="22" value="500" data-stopdesk="0">22. سيدي بلعباس</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="23" value="500" data-stopdesk="0">23. عنابة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="24" value="500" data-stopdesk="0">24. قالمة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="25" value="500" data-stopdesk="0">25. قسنطينة</option>
-                                        
-                                        <option data-model="Dz_ar_wilaya" data-model_id="26" value="500" data-stopdesk="0">26. المدية</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="27" value="500" data-stopdesk="0">27. مستغانم</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="28" value="450" data-stopdesk="0">28. المسيلة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="29" value="500" data-stopdesk="0">29. معسكر</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="30" value="600" data-stopdesk="0">30. ورقلة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="31" value="500" data-stopdesk="0">31. وهران</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="32" value="600" data-stopdesk="0">32. البيض</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="33" value="1250" data-stopdesk="0">33. إيليزي</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="34" value="450" data-stopdesk="0">34. برج بوعريرج</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="35" value="500" data-stopdesk="0">35. بومرداس</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="36" value="500" data-stopdesk="0">36. الطارف</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="37" value="1250" data-stopdesk="0">37. تندوف</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="38" value="500" data-stopdesk="0">38. تيسمسيلت</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="39" value="600" data-stopdesk="0">39. الوادي</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="40" value="500" data-stopdesk="0">40. خنشلة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="41" value="500" data-stopdesk="0">41. سوق أهراس</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="42" value="500" data-stopdesk="0">42. تيبازة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="43" value="450" data-stopdesk="0">43. ميلة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="44" value="500" data-stopdesk="0">44. عين الدفلة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="45" value="950" data-stopdesk="0">45. النعامة</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="46" value="500" data-stopdesk="0">46. عين تيموشنت</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="47" value="600" data-stopdesk="0">47. غرداية</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="48" value="500" data-stopdesk="0">48. غليزان</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="49" value="950" data-stopdesk="0">49. تيميمون</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="50" value="600" data-stopdesk="0">50. برج باجي مختار</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="51" value="600" data-stopdesk="0">51. أولاد جلال</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="56" value="600" data-stopdesk="0">56. جانت</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="57" value="600" data-stopdesk="0">57. المغير</option>
-                                        <option data-model="Dz_ar_wilaya" data-model_id="58" value="600" data-stopdesk="0">58. المنيعة</option>
-                      </select>
-                      <input type="text" id="name" placeholder="Enter your name">
-                      <input type="text" id="phone" placeholder="Enter your phone number">
-                      <button id="submitButton">Submit</button>
-                      
-                     <script src="./hoco.js">
+    <h1>Product Inquiry</h1>
+    <form id="userForm">
+        <div>
+            <label for="deliverySelect">الولاية:</label>
+            <select id="deliverySelect" name="province" class="form-select select-Dropdown_province advanced_select advanced_required" data-field="chippingprovince" required>
+                <option value="" disabled selected>الولاية</option>
+                <option value="1">1. أدرار</option>
+                <option value="2">2. الشلف</option>
+                <option value="3">3. الأغواط</option>
+                <option value="4">4. أم البواقي</option>
+                <option value="5">5. باتنة</option>
+                <option value="6">6. بجاية</option>
+                <option value="7">7. بسكرة</option>
+                <option value="8">8. بشار</option>
+                <option value="9">9. البليدة</option>
+                <option value="10">10. البويرة</option>
+                <option value="11">11. تامنغست</option>
+                <option value="12">12. تبسة</option>
+                <option value="13">13. تلمسان</option>
+                <option value="14">14. تيارت</option>
+                <option value="15">15. تيزي وزو</option>
+                <option value="16">16. الجزائر</option>
+                <option value="17">17. الجلفة</option>
+                <option value="18">18. جيجل</option>
+                <option value="19">19. سطيف</option>
+                <option value="20">20. سعيدة</option>
+                <option value="21">21. سكيكدة</option>
+                <option value="22">22. سيدي بلعباس</option>
+                <option value="23">23. عنابة</option>
+                <option value="24">24. قالمة</option>
+                <option value="25">25. قسنطينة</option>
+                <option value="26">26. المدية</option>
+                <option value="27">27. مستغانم</option>
+                <option value="28">28. المسيلة</option>
+                <option value="29">29. معسكر</option>
+                <option value="30">30. ورقلة</option>
+                <option value="31">31. وهران</option>
+                <option value="32">32. البيض</option>
+                <option value="33">33. إيليزي</option>
+                <option value="34">34. برج بوعريرج</option>
+                <option value="35">35. بومرداس</option>
+                <option value="36">36. الطارف</option>
+                <option value="37">37. تندوف</option>
+                <option value="38">38. تيسمسيلت</option>
+                <option value="39">39. الوادي</option>
+                <option value="40">40. خنشلة</option>
+                <option value="41">41. سوق أهراس</option>
+                <option value="42">42. تيبازة</option>
+                <option value="43">43. ميلة</option>
+                <option value="44">44. عين الدفلة</option>
+                <option value="45">45. النعامة</option>
+                <option value="46">46. عين تيموشنت</option>
+                <option value="47">47. غرداية</option>
+                <option value="48">48. غليزان</option>
+                <option value="49">49. تيميمون</option>
+                <option value="50">50. برج باجي مختار</option>
+                <option value="51">51. أولاد جلال</option>
+                <option value="56">56. جانت</option>
+                <option value="57">57. المغير</option>
+                <option value="58">58. المنيعة</option>
+            </select>
+        </div>
+        <div>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+        <div>
+            <button type="submit" id="submitButton">Submit</button>
+        </div>
+    </form>
 
-                     </script>
+    <script src="./hoco.js"></script>
 </body>
 </html>
