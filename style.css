@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+*{
+  margin : 0 ; 
+  padding: 0; 
+  scroll-behavior: smooth;
+}
+ 
+body { 
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  /* height: 1000vh; */
+}
+.headerTitle {
+
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    background-color: #fecc02; 
+    width: 100% ; 
+    height: 100%; 
+    padding: 30px; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+/* .headerTitle h4 { 
+  color:  red;
+  margin: 10px;
+  font-size: 1.7rem;
+
+} */
+
+@keyframes blinkingText {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.headerTitle h4 {
+  color: red;
+  margin: 10px;
+  font-size: 1.7rem;
+  animation: blinkingText 1s infinite; /* Blinks every second */
+} 
+
+
+.blinkButton {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: blinkingText 1.5s infinite; /* Blinks every 1.5 seconds */
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 700; 
+  text-decoration: none;
+}
+
+.blinkButton:hover {
+  background-color: #cc0000;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  margin-top: 20px; 
+  width: 100%;
+  text-align: center; 
+  padding: 20px 30px;
+
+}
+.productInfo h2 {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}  
+.productInfo p { 
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px; 
+  padding: 20px 30px;
+
+}
+/* .importantData {
+  font-weight: bold;
+  font-size: 26px !important;
+  color: #333;
+} */
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Moves 10px to the right */
+  }
+  100% {
+    transform: translateX(0); /* Returns to original position */
+  }
+}
+
+.importantData {
+  font-weight: bold;
+  font-size: 26px !important;
+  color: #333;
+  display: inline-block; /* Allows the element to be animated */
+  animation: moveLeftRight 1s ease-in-out infinite; /* Smooth left-right movement */
+} 
+
+.productSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+} 
+.product_images { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; 
+
+}
+.product_images img {
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+} 
+  .review_card {
+    display: flex;
+    justify-content: center;
+    align-items : flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    direction: rtl; 
+    padding: 20px 10px !important;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+  } 
+  .review_card h3 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap:20px
+  }
+.stars i { 
+  color: #fecc02;
+  font-size: 1rem;
+  margin-right: 5px;
+} 
+
+.reviews { 
+  padding: 50px 30px  ; 
+  margin-top: 10px;
+} 
+
+.reviews h2 { 
+  font-size: 3rem !important;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+} 
+.blue {
+  background-color: rgb(60, 60, 232);
+  margin-top: 20px;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s; /* Smooth transition for animation */
+}
+
+@keyframes earthquake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.shaking {
+  animation: earthquake 0.5s; /* Trigger earthquake animation */
+}
+ /* .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  direction: rtl; 
+  padding: 30px 20px ;
+  font-size: 20px;
+ } */
+.order_card {
+  border: 2px solid #007BFF; /* Blue border */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background */
+  max-width: 400px;
+  /* margin: 20px auto; */
+  font-family: 'Readex Pro', sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;  
+  /* margin: 20px auto; */
+
+}
+
+.order_card h3 {
+  color: #007BFF; /* Blue text for the header */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.order_card input[type="text"],
+.order_card input[type="number"],
+.order_card select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff; 
+  direction: rtl;
+}
+
+.order_card input[type="radio"] {
+  margin-right: 10px;
+}
+
+.order_card label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+  direction: rtl;
+  
+}
+
+.order_card select {
+  background-color: #fff;
+  width: 100% ;
+}
+
+.order_card button {
+  margin-top: 20px;
+  width: 100%; /* Full width button */
+}
+/* .variants{ 
+  direction: rtl;
+}  */
+.choice { 
+  display: flex;
+} 
+
+.variants {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #333; 
+  direction: rtl; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+
+}
+
+.variants label {
+  font-weight: bold;
+  margin-right: 0px;
+  font-size: 20px;
+}
+
+.variants input[type="radio"] {
+  transform: scale(1.5); /* Make the radio buttons larger */
+  margin-left: 10px;
+  margin-right: 15px; /* Spacing between the label and the input */
+  vertical-align: middle; /* Align the radio with the text */
+} 
+
+.convince_client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  direction: rtl; 
+  padding: 20px 0 ;
+  font-size: 20px;
+}
+ 
+.convince_client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  direction: rtl; 
+  padding: 20px 0 ;
+  font-size: 20px; 
+
+}
+.convince_client p  {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+ 
+
+@media (max-width:500px) {
+  .order_card {
+    border: 2px solid #007BFF; /* Blue border */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #f9f9f9; /* Light background */
+    max-width: 300px;
+    /* margin: 20px auto; */
+    font-family: 'Readex Pro', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;  
+    /* margin: 20px auto; */
+  
+  } 
+
+  .product_images img { 
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+  }
+}

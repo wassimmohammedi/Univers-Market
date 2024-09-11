@@ -17,10 +17,13 @@ document.getElementById('submitButton').addEventListener('click', function() {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
+        
         body: new URLSearchParams(data)
     })
     .then(response => {
+
         console.log('Success:', response);
+
     })
     .catch(error => {
         console.error('Error:', error);
